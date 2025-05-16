@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #f1f1f1;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a.active,
+nav a:hover {
+  color: #25D366;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+}
+
+.form-agendamento {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-agendamento label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.form-agendamento input,
+.form-agendamento select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-agendamento button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #25D366;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-agendamento button:hover {
+  background-color: #1ebe5d;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #aaa;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+  }
+}
